@@ -1,0 +1,109 @@
+body{
+    background-image: url(/Assets/back.jpg);
+}
+nav a{
+    display: inline-block;
+    text-decoration:none ;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(179, 240, 240);
+    border: 0.15px ;
+    font-size: larger;
+}
+section{
+    margin-top: 120px;
+}
+h1{
+    text-align: center;
+    font-size: xx-large;
+}
+form{
+    display: block;
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 1em;
+    width: 500px;
+    height: 300px;
+    margin-left: 35%;
+    background-color: rgb(221, 224, 224);
+}
+label{
+    display:inline-block;
+    text-align: right;
+    width: 90px;
+    font-size: larger;
+    font-weight: 800;
+    margin-left: 60px;
+}
+input{
+    width: 200px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+input:focus{
+    background-color: lightblue;
+}
+input:valid{
+    background-color: lightgreen;
+}
+button{
+    font-size: medium;
+    height: 40px;
+    width: 80px;
+    border-radius: 9px;
+    text-align: center;
+    margin-left: 40%;
+}
+input[type=checkbox]{
+    height: 15px;
+    width: 15px;
+}
+.new-user{
+    text-align: center;
+}
+/*nav a:hover{
+    display: inline-block;
+    background-color: beige;
+    border: 1px solid;
+}
+form{
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    margin-left: 38%;
+}
+h1{
+    text-align: center;
+}
+.email{
+    text-align: center;
+}
+.password{
+    text-align: center;
+}
+#email{
+    margin-top: 30px;  
+}
+label{
+    text-align: right;
+    font-style: bold;
+    font-weight: bolder;
+}
+input{
+    display:inline-block;
+    text-align: right;
+    width: 200PX;
+    height: 30px;
+}
+button{
+    font-size: large;
+    height: 30px;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+section{
+    margin-top: 250px;
+}*/

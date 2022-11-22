@@ -1,0 +1,23 @@
+body{
+    background-image: url(/Assets/back.jpg);
+}
+nav a{
+    display:inline-block;
+    text-decoration:none ;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(179, 240, 240);
+    border: 0.15px ;
+    font-size: larger;
+    opacity: 70%;
+}
+nav a:hover{
+    border: 1px solid;
+    opacity: 100%;
+}
+h1{
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 100px;
+}

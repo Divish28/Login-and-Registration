@@ -1,0 +1,60 @@
+body{
+    background-image: url(/Assets/back.jpg);
+}
+nav a{
+    display:inline-block;
+    text-decoration:none ;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(179, 240, 240);
+    border: 0.15px ;
+    font-size: larger;
+}
+
+h1{
+    text-align: center;
+    font-weight: 900;
+    font-size:xx-large
+}
+
+form{
+    display: block;
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 1em;
+    width: 700px;
+    height: 700px;
+    margin-left: 30%;
+    background-color: rgb(221, 224, 224);
+}
+label{
+    display:inline-block;
+    text-align: right;
+    width: 90px;
+    font-size: larger;
+    font-weight: 800;
+}
+input{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+select{
+    width: 200px;
+    height: 30px;
+    color: darkblue;
+}
+button{
+    width: 100px;
+    height: 50px;
+    margin-left: 40%;
+    font-size: large;
+}
+.existing-user{
+    text-align: center;
+
+}

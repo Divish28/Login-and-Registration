@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html manifest="appcahe" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="icon" href="back.jpg" >
+    <link rel="stylesheet" href="/CSS/login.css">
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <a href="dashbord.html">Home</a>
+                <a href="#">Men</a>
+                <a href="#">women</a>
+                <a href="#">kids</a>
+                <a href="signup.html">Signup</a>
+            </nav>
+        </div><br>
+    </header>
+    <section class="Login-form">
+        <h1>Login</h1>
+        <form action="dashbord.html">
+            <div class="email">
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="Email" placeholder="Example@gmail.com" required>
+            </div><br>
+            <div class="password">
+                <label style="text-align:rigth;" for="password">Password:</label>
+                <input id="password" type="password" name="password" placeholder="Password" required pattern="*[a-z,A-Z,0-9]{8,10}" minlength="8">
+                <label for="show-pass">Show Password:</label>
+                <input type="checkbox" onclick="show()">
+            </div><br>
+            <div>
+                <button onclick="storage()">Login</button>
+            </div>
+        </form><br>
+        <div class="new-user">
+            New User? <a href="signup.html">Signup</a>
+        </div>
+    </section>
+    <footer></footer>
+    <script>
+        function show(){
+            var pass=document.getElementById('password')
+            if (pass.type === 'text'){
+                pass.type='password'
+            }
+            else{
+                pass.type='text'
+            }
+        }
+        function storage(){
+            var user=document.getElementById('email')
+            var password=document.getElementById('password')
+            sessionStorage.setItem('email',user.value)
+            sessionStorage.setItem('pass',password.value)
+        }
+    </script>
+</body>
+</html>
