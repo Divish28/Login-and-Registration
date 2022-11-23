@@ -22,28 +22,28 @@
     </header>
     <section class="Login-form">
         <h1>Login</h1>
-        <form action="dashbord.html">
+        <form action="/HTML/dashbord.html" method="get"> 
             <div class="email">
                 <label for="email">Email:</label>
                 <input id="email" type="email" name="Email" placeholder="Example@gmail.com" required>
             </div><br>
-            <div class="password">
-                <label style="text-align:rigth;" for="password">Password:</label>
+            <div class="password" >
+                <label for="password">Password:</label>
                 <input id="password" type="password" name="password" placeholder="Password" required pattern="*[a-z,A-Z,0-9]{8,10}" minlength="8">
                 <label for="show-pass">Show Password:</label>
                 <input type="checkbox" onclick="show()">
             </div><br>
             <div>
-                <button onclick="storage()">Login</button>
+                <button onclick="storage();validate()">Login</button>
             </div>
         </form><br>
         <div class="new-user">
-            New User? <a href="signup.html">Signup</a>
+            New User? <a href="/HTML/signup.html">Signup</a>
         </div>
     </section>
     <footer></footer>
     <script>
-        function show(){
+       function show(){
             var pass=document.getElementById('password')
             if (pass.type === 'text'){
                 pass.type='password'
@@ -57,6 +57,17 @@
             var password=document.getElementById('password')
             sessionStorage.setItem('email',user.value)
             sessionStorage.setItem('pass',password.value)
+        }
+        function validate(){
+            let x = sessionStorage.getItem('email')
+            let y = localStorage.getItem('email')
+            if (x == y) {
+                window.location.replace("/HTML/dashbord.htlm")
+                alert("Login sucessful")
+            } else {
+                alert("invalid login")
+                window.location.replace("/HTML/login.html")
+            }
         }
     </script>
 </body>
