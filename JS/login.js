@@ -21,6 +21,6 @@ function validate(){
         alert("Login sucessful")
     } else {
         alert("invalid login")
-        window.location.href="/HTML/login.html"
+        window.location.replace("/HTML/login.html")
     }
 }
